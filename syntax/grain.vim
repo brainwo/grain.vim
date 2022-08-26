@@ -8,7 +8,7 @@ syntax match grainInlineComment "//.*$"
   \ contains=grainTodo oneline
 syntax region grainMultilineComment
   \ matchgroup=grainMultilineComment
-  \ start="/**" end="**/"
+  \ start="/**-" end="-**/"
   \ contains=grainTodo,@Spell
   \ fold
 
